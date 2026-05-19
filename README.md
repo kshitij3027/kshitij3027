@@ -2,6 +2,8 @@
 
 Software engineer focused on AI infrastructure and developer tools. MS in Computer Software Engineering from Carnegie Mellon (Dec 2025), two years prior at Siemens Digital Industries Software. Mostly Python + FastAPI, deployed on AWS.
 
+**Portfolio →** [v0-simple-spa-deployment.vercel.app](https://v0-simple-spa-deployment.vercel.app)
+
 ## Current focus
 
 - LLM serving infrastructure — caching, routing, rate limiting
@@ -20,7 +22,7 @@ Full-stack RAG pipeline, no LangChain. Hybrid retrieval (pgvector + Postgres FTS
 CLI coding agent built with Pydantic AI, Rich, and prompt-toolkit. Token-by-token streaming, runtime model switching across 3 providers, slash commands with tab completion, persistent history, 3-tier safety model.
 
 ### [backend-labs](https://github.com/kshitij3027/backend-labs)
-Distributed systems learning lab — 19 projects working through TCP/UDP servers, write-ahead logging, circuit breakers, P99 latency tracking, and related primitives.
+Distributed systems learning lab — 40+ projects working through caches, message queues, write-ahead logging, circuit breakers, P99 latency tracking, and related primitives.
 
 ## Stack
 
