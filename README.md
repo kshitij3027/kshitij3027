@@ -12,6 +12,10 @@ Software engineer focused on AI infrastructure and developer tools. MS in Comput
 
 ## Projects
 
+### [retell-enterprise-integration-gateway](https://github.com/kshitij3027/retell-enterprise-integration-gateway)
+
+Python/FastAPI middleware between Retell voice-agent webhooks and Salesforce. HMAC-verified ingress, Postgres-RLS multi-tenant isolation, ON CONFLICT idempotency, Presidio PII redaction before any persist or CRM write, pgcrypto-encrypted OAuth refresh tokens, tenacity-retried CRM upserts, append-only audit log via REVOKE. Pluggable `CRMAdapter` Protocol (Salesforce reference impl + ServiceNow stub, `mypy --strict`). OpenTelemetry → Jaeger with seven named spans; inbound hydration under a 1.8 s budget for Retell's 2 s SLA.
+
 ### [inference-gateway](https://github.com/kshitij3027/inference-gateway)
 Multi-instance LLM reverse proxy. Two-tier semantic caching (L1 LRU + L2 Redis embeddings, 15–73% hit rate), consistent-hash routing, circuit breakers, atomic rate limiting, request coalescing. Deployed on AWS via Terraform (ECS, ElastiCache, ALB) with OpenTelemetry tracing.
 
