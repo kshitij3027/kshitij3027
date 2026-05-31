@@ -12,6 +12,10 @@ Software engineer focused on AI infrastructure and developer tools. MS in Comput
 
 ## Projects
 
+### [sentinellite](https://github.com/kshitij3027/sentinellite)
+
+Self-hostable mini **autonomous SOC** — one `docker compose up`, zero API keys. Ingests GitHub / AWS / Okta / Falco telemetry into a `Neo4j` security graph, then runs parallel Pydantic-AI agents (local `Ollama`) that triage the noise and reconstruct a supply-chain breach into a MITRE ATT&CK kill chain, with one-click response actions behind a human-approval gate and a SHA-256 hash-chained audit log. Demoed against **real public attack data** (Splunk Attack Data + a real lodash CVE): auto-closes ~84% of alerts and rebuilds an 8-stage incident end-to-end in ~2 min on CPU.
+
 ### [retell-enterprise-integration-gateway](https://github.com/kshitij3027/retell-enterprise-integration-gateway)
 
 Python/FastAPI middleware between Retell voice-agent webhooks and Salesforce. HMAC-verified ingress, Postgres-RLS multi-tenant isolation, ON CONFLICT idempotency, Presidio PII redaction before any persist or CRM write, pgcrypto-encrypted OAuth refresh tokens, tenacity-retried CRM upserts, append-only audit log via REVOKE. Pluggable `CRMAdapter` Protocol (Salesforce reference impl + ServiceNow stub, `mypy --strict`). OpenTelemetry → Jaeger with seven named spans; inbound hydration under a 1.8 s budget for Retell's 2 s SLA.
@@ -34,6 +38,7 @@ Distributed systems learning lab — 40+ projects working through caches, messag
 **Backend:** FastAPI, Pydantic, Pydantic AI
 **AI/ML:** OpenAI, Cohere, pgvector, sentence-transformers
 **Infra:** Docker, Redis, PostgreSQL, Terraform (AWS ECS / ElastiCache / ALB), Prometheus, Grafana, OpenTelemetry
+**Graph / agents:** Neo4j (Cypher), Ollama, MITRE ATT&CK, Sigma rules
 
 ## Reach me
 
